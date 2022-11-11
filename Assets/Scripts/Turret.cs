@@ -10,11 +10,15 @@ public class Turret : MonoBehaviour
     private Transform firePoint;
 
     [Header("TowerProperties")]
-    public float fireRate;
     private float fireCountdown;
-    public float range = 10f;
-    private int minDamage = 1;
-    private int maxDamage = 5;
+    public float fireRate = 1;
+    public float range = 3f;
+    public int minDamage = 1;
+    public int maxDamage = 3;
+    public int price;
+    public string towerName;
+    public string weapon;
+
     public GameObject bulletPrefab;
     
     void Start()
